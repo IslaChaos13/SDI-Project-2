@@ -1,0 +1,20 @@
+/* PageHeader */
+.pageHeader{
+  display: flexbox;
+  border: solid red;
+}
+
+/* HomePage */
+
+.tvShows ul{
+  border: solid green;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  list-style-type: none;
+}
+
+/* ShowDetails */
+.showDetails{
+  display: flex;
+}
