@@ -17,4 +17,14 @@
 /* ShowDetails */
 .showDetails{
   display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cast ul{
+  border: solid orangered;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  list-style-type: none;
 }

@@ -4,6 +4,10 @@ import './App.css'
 import HomePage from './HomePage'
 import PageHeader from './PageHeader'
 import ShowDetails from './ShowDetails'
+import PeopleDetails from './PeopleDetails'
+import Signup from './signup/Signup'
+import Login from './login/Login'
+import Survey from './survey/Survey'
 
 const router = createBrowserRouter([
   {
@@ -17,8 +21,25 @@ const router = createBrowserRouter([
       {
         path: "/tvShows/:id",
         element: <ShowDetails />
+      },
+      {
+        path: "/people",
+        element: <PeopleDetails />
+      },
+      {
+        path: "/signup",
+        element: <Signup />
+      },
+       {
+        path: "/login",
+        element: <Login />
+      },
+        {
+        path: "/survey",
+        element: <Survey />
       }
-     ]
+
+    ]
   }
 ])
 

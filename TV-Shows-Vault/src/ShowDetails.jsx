@@ -23,14 +23,16 @@ function ShowDetails () {
                 <div className = 'l-Details'>
 
                     <Link to='/'><button>Back</button></Link>
+
                     <h1>{show.name}</h1>
                     < img src = {show.image?.medium} alt={show.name} />
-                    <p>Genres: {show.genres.join(' | ')}</p>
-                    <p>Rating: {show.rating?.average ?? 'N/A'}</p>
+
 
                 </div>
 
                 <div className = 'r-Details'>
+                    <p>Genres: {show.genres.join(' | ')}</p>
+                    <p>Rating: {show.rating?.average ?? 'N/A'}</p>
                     <p dangerouslySetInnerHTML = {{__html: show.summary}} />
 
                 </div>
